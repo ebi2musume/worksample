@@ -1,18 +1,11 @@
-# Rails前提知識  
+﻿# Rails前提知識  
 
 ## このテキストのゴール  
 
-## Railsをインストールしよう
+## Ruby on Railsとは
 
-## Unixコマンドとは  
+## Webアプリケーションとは
 
-## Railsでよく使うUnixコマンドを覚えよう
-### ls  
-### mkdir  
-### cd  
-### mv  
-### cp  
-### rm  
-### rmdir  
-### rm -rf  
-### cat
+## Rails基礎
+### なぜRailsが必要なのか
+### MVCについて
