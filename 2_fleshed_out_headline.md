@@ -5,26 +5,25 @@ Rubyにおいてブロックはオブジェクトではありません。
 しかし「lambda」を使うことで、ブロックとして書いた手続きそのものを
 Procオブジェクトとすることができます。
 
-例としてlambda.rbを示します。
+※ブロックはdo ... endまたは{ ... }で囲まれた手続きのかたまりです。
 
-square = lambda{ |n| n*n }
+例を示します。ファイル名はlambda.rbです。
 
-square.call(3)
+>>> square = lambda{ |n| n*n }
+>>> square.call(3)
+>>> 
+>>> def print_func(arg,fun)  
+>>>   puts  fun.call(arg)
+>>> end
+>>>
+>>> print_func(4,square)
 
-def print_func(arg,fun)
-  puts  fun.call(arg)
-end
-
-print_func(4,square)
-
-
-lambda.rbの実行結果
-
-$ruby lambda.rb
+実行結果
+$ ruby lambda.rb
 9
 16
 
-
-このようにブロックをProcオブジェクトでラップすれば、
-変数に代入したり、メソッドに引数として渡したりすることが
-できるようになります。
+以上の例では、インスタンス変数squareにProcオブジェクトを代入し、
+callメソッドによりlambdaで定義したProcオブジェクトを呼び出しています。
+callメソッドに与えた引数が、そのままブロック引数に対応します。  
+また、print_funcというメソッドに引数としてProcオブジェクトを与えています。
