@@ -13,7 +13,7 @@ Procオブジェクトとすることができます。
 >>> square.call(3)
 >>> 
 >>> def print_func(arg,fun)    
-    >>>	 puts  fun.call(arg)  
+>>>	 puts  fun.call(arg)  
 >>> end
 >>>
 >>> print_func(4,square)
