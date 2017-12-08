@@ -9,11 +9,11 @@ Procオブジェクトとすることができます。
 
 例を示します。ファイル名はlambda.rbです。
 
->>> square = lambda{ |n| n*n }
+>>> square = lambda{ |n| n*n }  
 >>> square.call(3)
 >>> 
->>> def print_func(arg,fun)  
->>>   puts  fun.call(arg)
+>>> def print_func(arg,fun)    
+>>>   puts  fun.call(arg)  
 >>> end
 >>>
 >>> print_func(4,square)
