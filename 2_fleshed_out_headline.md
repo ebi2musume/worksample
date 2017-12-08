@@ -13,14 +13,14 @@ Procオブジェクトとすることができます。
 >>> square.call(3)
 >>> 
 >>> def print_func(arg,fun)    
->>>   puts  fun.call(arg)  
+>>>	 puts  fun.call(arg)  
 >>> end
 >>>
 >>> print_func(4,square)
 
 実行結果
-$ ruby lambda.rb
-9
+$ ruby lambda.rb  
+9  
 16
 
 以上の例では、インスタンス変数squareにProcオブジェクトを代入し、
