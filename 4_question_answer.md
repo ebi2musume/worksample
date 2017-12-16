@@ -1,16 +1,16 @@
 ﻿rails g scaffold blog title:string content:text  
 というコマンドで生成される以下のファイルを例に説明します。  
   
-モデル名　blog 単数形
-ファイル名　blog.rg 単数形
-モデルクラス名　Blog 単数形、頭文字は大文字
-テーブル名　blogs 複数系
-マイグレーションファイル名　xxxxxxxxxxxxxx_create_blogs.rb 複数形
-マイグレーションクラス名　CreateUsers 複数形、頭文字は大文字
-　
-コントローラ名　blogs 複数形
-ファイル名　blogs_controller.rg 複数形
-コントローラクラス名　BlogsController 複数形、頭文字は大文字
+モデル名　blog 単数形  
+ファイル名　blog.rg 単数形  
+モデルクラス名　Blog 単数形、頭文字は大文字  
+テーブル名　blogs 複数系  
+マイグレーションファイル名　xxxxxxxxxxxxxx_create_blogs.rb 複数形  
+マイグレーションクラス名　CreateUsers 複数形、頭文字は大文字  
+　  
+コントローラ名　blogs 複数形  
+ファイル名　blogs_controller.rg 複数形  
+コントローラクラス名　BlogsController 複数形、頭文字は大文字  
 
 モデルクラスであるBlogは、オブジェクト指向における設計書に当たります。  
 Blogという設計書にtitleとcontentという項目を設けています。  
